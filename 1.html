@@ -1,4 +1,19 @@
 <!DOCTYPE html>
 <html>
-
+  <head>
+    <script>
+      function check() {
+        var value = document.getElementById("ask").value;
+        if (valuetoUpperCase() == "pokemon"toUpperCase()) {
+          document.getElementById("answer").innerHTML = "TEXT";
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <p></p>
+    <input type="text" maxlength="7" id="ask"/>
+    <button type="button" onclick="check()">Check answer</button>
+  </body>
 </html>
