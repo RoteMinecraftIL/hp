@@ -11,12 +11,15 @@
         var value = document.getElementById("ask").value;
         if (value.toUpperCase() == "pokemon".toUpperCase()) {
           document.getElementById("answer").innerHTML = "<a href='http://example.com'>REPLACEWITHLINK</a>";
+        } else {
+          document.getElementById("answer").innerHTML = "<font color='red'>TRY AGAIN!</font>";
         }
       }
     </script>
   </head>
   
   <body>
+    <h1>5963b48bb2aa6f2c1fb76cc6251698357af1cb27 - Quest 1</h1>
     <p class="inline">From what game series was the creature that harry saw behind the bush?</p>
     <input type="text" maxlength="7" id="ask"/>
     <button type="button" onclick="check()">Check answer</button>
