@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .inline {
+        display:inline;
+      }
+    </style>
     <script>
       function check() {
         var value = document.getElementById("ask").value;
-        if (valuetoUpperCase() == "pokemon"toUpperCase()) {
-          document.getElementById("answer").innerHTML = "TEXT";
+        if (value.toUpperCase() == "pokemon".toUpperCase()) {
+          document.getElementById("answer").innerHTML = "<a href='http://example.com'>REPLACEWITHLINK</a>";
         }
       }
     </script>
   </head>
   
   <body>
-    <p></p>
+    <p class="inline">From what game series was the creature that harry saw behind the bush?</p>
     <input type="text" maxlength="7" id="ask"/>
     <button type="button" onclick="check()">Check answer</button>
+    <p id="answer"></p>
   </body>
 </html>
